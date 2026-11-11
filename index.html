@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>N Maharshi | Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <a href="#home" class="logo">
+    <span class="logo-text">M</span>
+    <img src="assets/logo.png" alt="" onerror="this.style.display='none'">
+  </a>
+  <nav class="nav">
+    <a href="#home" data-page="home"><i data-lucide="house"></i>Home</a>
+    <a href="#about" data-page="about"><i data-lucide="user"></i>About</a>
+    <a href="#projects" data-page="projects"><i data-lucide="code"></i>Projects</a>
+    <a href="#skills" data-page="skills"><i data-lucide="layers"></i>Skills</a>
+    <a href="#experience" data-page="experience">
+      <svg class="nav-icon experience-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+        <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"></path>
+      </svg>
+      <span>Experience</span>
+    </a>
+    <a href="#contact" data-page="contact"><i data-lucide="mail"></i>Contact</a>
+  </nav>
+</aside>
+
+<div class="social">
+  <a href="https://github.com/Maharshi-spec" target="_blank" rel="noopener" aria-label="GitHub"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg)"></span></a>
+  <a href="https://www.linkedin.com/in/maharshi-nadupuru-5b8929368" target="_blank" rel="noopener" aria-label="LinkedIn"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/linkedin.svg)"></span></a>
+  <a href="https://x.com/NMaharshi999" target="_blank" rel="noopener" aria-label="X"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/x.svg)"></span></a>
+  <a href="https://discord.com/users/1524060464235941991" target="_blank" rel="noopener" aria-label="Discord"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/discord.svg)"></span></a>
+</div>
+
+<main>
+  <!-- HOME -->
+  <div class="page" id="home">
+    <section class="hero">
+      <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+
+      <div class="hero-art">
+        <img src="assets/hero1.png" alt="" class="hero-img active">
+        <img src="assets/hero2.png" alt="" class="hero-img">
+        <img src="assets/hero3.png" alt="" class="hero-img">
+      </div>
+
+      <div class="hero-text">
+        <p class="hello"><span class="dash"></span>Hello, I'm</p>
+        <h1><span class="n">N</span> <span class="name">Maharshi</span></h1>
+        <h2>Full Stack Developer &amp; Creative Thinker</h2>
+        <p class="lead">I build modern web experiences, develop intelligent solutions,<br>and turn ideas into impactful products.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary"><i data-lucide="code"></i>View My Work<i data-lucide="arrow-right"></i></a>
+          <a href="#contact" class="btn ghost"><i data-lucide="mail"></i>Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-text">
+        <h3><span class="dash"></span>About Me</h3>
+        <p>I'm a 2nd year B.Tech CSE student, passionate about software development, game development, and AI.<br>I love exploring new technologies and building solutions that make a difference.</p>
+        <a href="#about" class="link">Learn More <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="stats">
+        <div><i data-lucide="code-xml"></i><b>10+</b><span>Projects</span></div>
+        <div><i data-lucide="trophy"></i><strong>Hackathon</strong><span>Participant</span></div>
+        <div><i data-lucide="book-open"></i><b>2+</b><span>Years of Learning</span></div>
+        <div><i data-lucide="rocket"></i><b>100%</b><span>Dedication</span></div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="tech">
+        <h4><span class="dash"></span>Tech Stack</h4>
+        <ul>
+          <li><img src="https://cdn.simpleicons.org/python/ffd43b" alt="">Python</li>
+          <li><i data-lucide="coffee"></i>Java</li>
+          <li><img src="https://cdn.simpleicons.org/cplusplus/ffffff" alt="">C++</li>
+          <li><i data-lucide="globe"></i>Web Dev</li>
+          <li><i data-lucide="brain"></i>AI / ML</li>
+          <li><img src="https://cdn.simpleicons.org/linux/ffffff" alt="">Linux</li>
+        </ul>
+      </div>
+
+      <div class="featured">
+        <div class="feat-head">
+          <h3><span class="dash"></span>Featured Projects</h3>
+          <a href="#projects" class="link small">View All Projects <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="cards">
+          <!-- TODO: replace href="#home" with each project's real link -->
+          <article class="card">
+            <i data-lucide="gamepad-2"></i>
+            <h5>The Fallen Crypt</h5><p>2D Pixel Art Fighting Game</p>
+            <a href="#home" class="link small">View Project <i data-lucide="arrow-right"></i></a>
+            <div class="card-art"><img src="assets/the_fallen_crypt.png" alt="" onerror="this.style.display='none'"></div>
+          </article>
+          <article class="card">
+            <i data-lucide="brain"></i>
+            <h5>Mindwave</h5><p>Mental Health AI App</p>
+            <a href="#home" class="link small">View Project <i data-lucide="arrow-right"></i></a>
+            <div class="card-art"><img src="assets/mindwave.png" alt="" onerror="this.style.display='none'"></div>
+          </article>
+          <article class="card">
+            <i data-lucide="map-pin"></i>
+            <h5>EcoQuest</h5><p>Smart Education Game</p>
+            <a href="#home" class="link small">View Project <i data-lucide="arrow-right"></i></a>
+            <div class="card-art"><img src="assets/ecoquest.png" alt="" onerror="this.style.display='none'"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- OTHER PAGES: blank for now -->
+  <!-- about-section.html -->
+  <div class="page" id="about" hidden>
+    <section class="about-hero">
+      <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+      <div class="about-top">N Maharshi</div>
+      <div class="about-art"><img src="assets/about.png" alt="" onerror="this.style.display='none'"></div>
+
+      <div class="a-text">
+        <span class="dash"></span>
+        <h1>About <span>Me</span></h1>
+        <h2>Full Stack Developer<i></i>Game Developer<i></i>AI developer</h2>
+        <p>Hi, I'm <b>N Maharshi</b>, a 2<sup>nd</sup> year B.Tech CSE student from Vizag.<br>
+           I love building impactful solutions, exploring new technologies,<br>
+           and turning ideas into real-world products. I'm passionate about<br>
+           game development, AI, and creating meaningful tech.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary"><i data-lucide="code"></i>View My Projects<i data-lucide="arrow-right"></i></a>
+          <a href="#contact" class="btn ghost"><i data-lucide="mail"></i>Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="a-stats">
+      <div><i data-lucide="graduation-cap"></i><b>2+</b><span>Years of Learning</span></div>
+      <div><i data-lucide="trophy"></i><b>10+</b><span>Projects Completed</span></div>
+      <div><i data-lucide="users"></i><strong>Hackathon</strong><span>Participant</span></div>
+      <div><i data-lucide="lightbulb"></i><b>100%</b><span>Dedication</span></div>
+    </section>
+
+    <section class="a-bottom">
+      <div class="a-journey">
+        <h3 class="a-h"><span class="dash"></span>My Journey</h3>
+        <ul class="timeline">
+          <li><span class="yr">2024 – Present</span><b>B.Tech in Computer Science Engineering</b><small>Centurion University of Technology and Management</small></li>
+          <li><span class="yr">2023 – 2024</span><b>Exploring Development &amp; AI</b><small>Projects, Hackathons and Creative Endeavours</small></li>
+          <li><span class="yr">Before 2023</span><b>A Curious Learner</b><small>Books, Technology and Endless Curiosity</small></li>
+        </ul>
+      </div>
+
+      <div class="a-sep"></div>
+
+      <div class="a-drives">
+        <h3 class="a-h"><span class="dash"></span>What Drives Me?</h3>
+        <p>I'm driven by <b>curiosity</b>, the thrill of solving complex problems,<br>
+           and the desire to create something that makes a difference.<br>
+           Whether it's coding, designing, or learning something new —<br>
+           I always strive to grow and do better.</p>
+        <div class="chips">
+          <span>Game Development</span><span>AI &amp; ML</span><span>Web Development</span>
+          <span>Open Source</span><span>Tech Innovation</span><span>Creative Design</span>
+        </div>
+      </div>
+
+      <div class="a-quote">
+        <span class="qm">&ldquo;</span>
+        <blockquote>Dream big, build harder,<br>and keep going.</blockquote>
+        <cite>— N Maharshi</cite>
+      </div>
+    </section>
+  </div>
+
+  <!-- Replace these 4 lines in index.html:
+  <div class="page blank" id="projects" hidden></div>
+  <div class="page blank" id="skills" hidden></div>
+  <div class="page blank" id="experience" hidden></div>
+  <div class="page blank" id="contact" hidden></div>
+with everything below -->
+
+  <!-- PROJECTS -->
+  <div class="page pg" id="projects" hidden>
+    <section class="pg-head">
+      <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+      <div class="about-top">N Maharshi</div>
+      <div class="pg-art"><img src="assets/projects-art.png" alt="" onerror="this.style.display='none'"></div>
+      <div class="pg-quote">“Build. Learn. Improve.”<small>— N Maharshi</small></div>
+      <div class="pg-title">
+        <div class="my"><span class="dash"></span>My</div>
+        <h1 class="pg-h">Proj<em>ects</em></h1>
+        <p class="pg-sub">Ideas turned into reality — from games to AI, web apps to<br>real-world solutions.</p>
+      </div>
+    </section>
+    <div class="pj-chips">
+      <button class="on" data-f="all">All</button><button data-f="web">Web Dev</button><button data-f="ai">AI / ML</button><button data-f="game">Games</button><button data-f="other">Other</button>
+    </div>
+    <div class="pj-grid">
+      <article class="pj" data-cat="game">
+        <div class="pj-img"><span class="pj-badge">Game</span><img src="assets/the_fallen_crypt.png" alt=""></div>
+        <div class="pj-body"><h4>The Fallen Crypt</h4><p>A 2D pixel art fighting game built in LibGDX with dynamic combat mechanics.</p>
+          <div class="pj-foot"><a href="#projects" class="link small">View Project <i data-lucide="arrow-right"></i></a><div class="tags"><span>Java</span><span>LibGDX</span><span>2D</span></div></div></div>
+      </article>
+      <article class="pj" data-cat="game">
+        <div class="pj-img"><span class="pj-badge">Game</span><img src="assets/ecoquest.png" alt=""></div>
+        <div class="pj-body"><h4>EcoQuest</h4><p>A smart city management game for educational purposes.</p>
+          <div class="pj-foot"><a href="#projects" class="link small">View Project <i data-lucide="arrow-right"></i></a><div class="tags"><span>Java</span><span>Game Dev</span></div></div></div>
+      </article>
+      <article class="pj" data-cat="ai">
+        <div class="pj-img"><span class="pj-badge">AI / ML</span><img src="assets/mindwave.png" alt=""></div>
+        <div class="pj-body"><h4>Mindwave</h4><p>A mental health assistant using facial emotion detection.</p>
+          <div class="pj-foot"><a href="#projects" class="link small">View Project <i data-lucide="arrow-right"></i></a><div class="tags"><span>Python</span><span>ML</span></div></div></div>
+      </article>
+      <article class="pj" data-cat="ai">
+        <div class="pj-img"><span class="pj-badge">AI / ML</span><img src="assets/sahayatri.png" alt="" onerror="this.style.display='none'"></div>
+        <div class="pj-body"><h4>Sahayātrī</h4><p>An AI travel planner with real-time weather, crowds and safety.</p>
+          <div class="pj-foot"><a href="#projects" class="link small">View Project <i data-lucide="arrow-right"></i></a><div class="tags"><span>Python</span><span>LangGraph</span></div></div></div>
+      </article>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="page pg" id="skills" hidden>
+    <div class="pg-band"></div>
+    <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+    <div class="about-top">N Maharshi</div>
+    <section class="sk">
+      <div class="sk-l">
+        <div class="pg-title">
+          <div class="my"><span class="dash"></span>My</div>
+          <h1 class="pg-h">Sk<em>ills</em></h1>
+          <p class="pg-sub">A blend of programming, tools and creativity<br>to build efficient and impactful solutions.</p>
+        </div>
+        <div class="a-stats sk-stats">
+          <div><i data-lucide="code-xml"></i><b>15+</b><small>Languages &amp;<br>Frameworks</small></div>
+          <div><i data-lucide="box"></i><b>10+</b><span>Projects</span></div>
+          <div><i data-lucide="trophy"></i><strong style="font-size:1.1rem">Hackathon</strong><span>Participant</span></div>
+          <div><i data-lucide="star"></i><b>100%</b><span>Dedication</span></div>
+        </div>
+      </div>
+      <div class="sk-m">
+        <h3 class="line-h">Technical Skills</h3>
+        <div class="tiles">
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/python/ffffff" alt=""></span>Python</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/cplusplus/ffffff" alt=""></span>C / C++</div>
+          <div class="tile"><span class="ic"><i data-lucide="coffee"></i></span>Java</div>
+          <div class="tile"><span class="ic"><i data-lucide="code-xml"></i></span>Web Dev</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/linux/ffffff" alt=""></span>Linux</div>
+          <div class="tile"><span class="ic"><i data-lucide="gamepad-2"></i></span>Game Dev</div>
+          <div class="tile"><span class="ic"><i data-lucide="brain"></i></span>AI / ML</div>
+          <div class="tile"><span class="ic"><i data-lucide="database"></i></span>Databases</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/javascript/ffffff" alt=""></span>JavaScript</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/react/ffffff" alt=""></span>React</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/nodedotjs/ffffff" alt=""></span>Node.js</div>
+          <div class="tile"><span class="ic"><img src="https://cdn.simpleicons.org/github/ffffff" alt=""></span>Git &amp; GitHub</div>
+        </div>
+        <h3 class="line-h">Tools &amp; Technologies</h3>
+        <div class="pills"><span>VS Code</span><span>Git</span><span>Docker</span><span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>Blender</span><span>Unreal Engine</span></div>
+      </div>
+      <div class="sk-r">
+        <div class="navy soft"><h4>Soft Skills</h4>
+          <ul><li><i data-lucide="check"></i>Problem Solving</li><li><i data-lucide="check"></i>Team Leadership</li><li><i data-lucide="check"></i>Communication</li><li><i data-lucide="check"></i>Adaptability</li><li><i data-lucide="check"></i>Creativity</li></ul></div>
+        <div class="navy sk-q"><span class="qm2">“</span>“Keep learning, because the best version is yet to come.”<cite>— N Maharshi</cite></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="page pg" id="experience" hidden>
+    <section class="pg-head">
+      <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+      <div class="about-top">N Maharshi</div>
+      <div class="pg-art"><img src="assets/experience.png" alt="" onerror="this.style.display='none'"></div>
+      <div class="pg-title">
+        <div class="my"><span class="dash"></span>My</div>
+        <h1 class="pg-h">Exper<em>ience</em></h1>
+        <p class="pg-sub">A journey of learning, building and growing<br>in the world of technology.</p>
+      </div>
+    </section>
+    <section class="xp-wrap">
+      <div class="xp-list">
+        <div class="xp-row"><span class="xp-date">2024 – Present</span><div><b>B.Tech in Computer Science Engineering</b><small>Centurion University of Technology and Management, Vizianagaram, AP</small></div><div class="xp-desc">Learning advanced concepts in CS, working on real-world projects and exploring AI, Game Dev and Web Technologies.</div></div>
+        <div class="xp-row"><span class="xp-date">2025 – Present</span><div><b>Team Lead &amp; Web Developer</b><small>College Website Development</small></div><div class="xp-desc">Led a team to build and maintain the college website, improving performance and user experience.</div></div>
+        <div class="xp-row"><span class="xp-date">2025</span><div><b>Freelance Developer</b><small>2 Websites for Small Companies</small></div><div class="xp-desc">Developed and maintained websites for local businesses.</div></div>
+        <div class="xp-row"><span class="xp-date">2024 – 2025</span><div><b>Project Developer</b><small>Java Game – The Fallen Crypt</small></div><div class="xp-desc">Built a 2D fighting game using LibGDX.</div></div>
+        <div class="xp-row"><span class="xp-date">2024</span><div><b>AI &amp; ML Enthusiast</b><small>YOLO Models, Custom AI Assistant (ZERO)</small></div><div class="xp-desc">Trained YOLO models and developed ZERO – a personal AI assistant.</div></div>
+      </div>
+      <aside class="xp-side">
+        <div class="navy"><h4><i data-lucide="trophy"></i>Achievements</h4>
+          <ul><li><i data-lucide="check"></i>Hackathon Participant &amp; Lead</li><li><i data-lucide="check"></i>SIH 25009 – EcoQuest</li><li><i data-lucide="check"></i>Hackyathra – Event Lead</li><li><i data-lucide="check"></i>Blood Donation Campaign</li><li><i data-lucide="check"></i>Film Club – Writer/Director</li></ul></div>
+        <div class="navy xp-q"><span class="qm2">“</span>Always ready to learn, build and contribute.<cite>— N Maharshi</cite></div>
+      </aside>
+    </section>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="page pg" id="contact" hidden>
+    <a class="btn-resume" href="assets/resume.pdf" download="Maharshi_Resume.pdf"><i data-lucide="download"></i>Download Resume</a>
+    <div class="about-top" style="width:40rem">N Maharshi</div>
+    <div class="ct-art"><img src="assets/contact.png" alt="" onerror="this.style.display='none'"></div>
+    <div class="ct-deco"><i class="d1"></i><i class="d2"></i><i class="d3"></i><i class="d4"></i></div>
+    <section class="ct">
+      <div class="ct-l">
+        <div class="pg-title" style="position:static;padding-top:1.4rem">
+          <span class="dash"></span>
+          <h1 class="pg-h" style="margin-top:.5rem">Get In <em>Touch</em></h1>
+          <p class="pg-sub">Have a project in mind, a collaboration idea,<br>or just want to say hi? Feel free to reach out!</p>
+        </div>
+        <div class="ct-info">
+          <div><i data-lucide="mail"></i><span><b>Email</b>n.maharshi@example.com</span></div>
+          <div><i data-lucide="phone"></i><span><b>Phone</b>+91 98765 43210</span></div>
+          <div><i data-lucide="map-pin"></i><span><b>Location</b>Vizag, Andhra Pradesh, India</span></div>
+        </div>
+      </div>
+      <form class="ct-form" id="cform">
+        <h3><span class="dash"></span>Send a Message</h3>
+        <div class="row"><input name="name" placeholder="Your Name *" required><input name="email" type="email" placeholder="Your Email *" required></div>
+        <select name="subject" required><option value="">Subject *</option><option>Project Collaboration</option><option>Freelance Work</option><option>General Inquiry</option><option>Other</option></select>
+        <textarea name="message" placeholder="Your Message *" required></textarea>
+        <button type="submit"><i data-lucide="send"></i>Send Message</button>
+      </form>
+      <aside class="ct-r">
+        <div class="navy"><h4>Let’s Connect</h4><p>Follow me on social media for updates, projects and more!</p>
+          <div class="socs">
+            <a href="https://github.com/Maharshi-spec" target="_blank" rel="noopener" aria-label="GitHub"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg)"></span></a>
+            <a href="https://www.linkedin.com/in/maharshi-nadupuru-5b8929368" target="_blank" rel="noopener" aria-label="LinkedIn"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/linkedin.svg)"></span></a>
+            <a href="https://x.com/NMaharshi999" target="_blank" rel="noopener" aria-label="X"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/x.svg)"></span></a>
+            <a href="https://discord.com/users/1524060464235941991" target="_blank" rel="noopener" aria-label="Discord"><span style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/discord.svg)"></span></a>
+          </div></div>
+        <div class="ct-q">“Build. Learn. Grow.”<small>— N Maharshi</small></div>
+      </aside>
+    </section>
+  </div>
+</main>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
