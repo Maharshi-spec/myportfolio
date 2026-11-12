@@ -316,3 +316,24 @@ h1.pg-h{font-size:5rem;line-height:1;margin-top:-.2rem}
   .sk-r{padding:0}.tiles{grid-template-columns:repeat(3,1fr)}
   .xp-row{grid-template-columns:1fr;height:auto;gap:.4rem}.xp-side,.ct-l,.ct-r{width:auto}
 }
+
+/* ===== MOBILE FIXES: Skills + Contact ===== */
+@media (max-width:900px){
+  /* subtitles: no forced breaks, slightly smaller text */
+  .pg-sub br,.lead br{display:none}
+  .pg-sub{font-size:1.05rem}
+
+  /* resume button on Skills/Contact: same side margins as the content */
+  .pg>.btn-resume{margin:1rem 1.2rem 0;width:auto}
+
+  /* SKILLS: stats card grows with its content */
+  .a-stats.sk-stats{height:auto;margin:1.5rem 0 0}
+  .a-stats.sk-stats>div{flex:1 1 50%;padding:1rem .5rem}
+  .a-stats>div+div::before{display:none}
+  .a-stats>div:nth-child(even){border-left:1px solid #cfcac4}
+  .a-stats>div:nth-child(n+3){border-top:1px solid #cfcac4}
+
+  /* CONTACT: one column for info card and form fields */
+  .ct-info{grid-template-columns:1fr}
+  .ct-form .row{grid-template-columns:1fr;gap:0}
+}
